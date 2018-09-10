@@ -1,5 +1,6 @@
 language: python
 sudo: false
+dist: xenial
 stages:
 - test
 - deploy-pypi
@@ -10,6 +11,7 @@ env:
 
 # reverse order because travis already has latest python installed
 python:
+- "3.7"
 - "3.6"
 - "3.5"
 
